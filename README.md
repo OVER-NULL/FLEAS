@@ -1,13 +1,14 @@
 # FLEAS
 
-![](https://img.shields.io/badge/C++-17-orange.svg) ![](https://img.shields.io/badge/Python-3.6-blue.svg) ![](https://img.shields.io/badge/license-Apache2.0-lightgray.svg) ![](https://img.shields.io/badge/version-0.2b.0a-yellow.svg) ![](https://img.shields.io/badge/build-passing-green.svg)
+![](https://img.shields.io/badge/C++-17-ffa500.svg) ![](https://img.shields.io/badge/Python-3.6-blue.svg) ![Bash](https://img.shields.io/badge/Bash-5.0-ff0000) ![](https://img.shields.io/badge/license-Apache2.0-lightgray.svg) ![](https://img.shields.io/badge/version-0.2b.5a-DA10F0.svg) ![](https://img.shields.io/badge/build-passing-green.svg)
+
 > An ASCII based game 
 
 --- 
 
 ### Table of Contents  
 
-These are the sections on the [README.md](https://github.com/OVER-NULL/FLEAS/blob/master/README.md) file. 
+These are the sections on the [README.md file](https://github.com/OVER-NULL/FLEAS/blob/master/README.md). 
 
 - [Description](#description)
 - [How To Use](#how-to-use)
@@ -25,22 +26,26 @@ These are the sections on the [README.md](https://github.com/OVER-NULL/FLEAS/blo
 
 ## Description 
 
-FLEAS is a ASCII GAME made in C++. 
+FLEAS is an ASCII GAME made in C++, that is based in an alternate history in 1400's Europe where you have one goal: 
+
+#### DESTROY THE PLAGUE! 
 
 #### Technologies 
 
 - C++ 17 
 - Python 3.6
 - NCurses
-- Bash Script
+- Bash Script 5.0 
+- Windows API(s)
+- MakeFile 
 
-#### Other technologies are subject to be used 
+#### Other technologies are subject to be used and changed without notice   
 
 --- 
 
 ## How To Use 
 
-To use this work simply download it and edit or use it by running it in the GNU C++ Compiler.\
+To use this work simply download it and edit or use it by running it in the GNU C++ Compiler.
 
 #### Prerequistites 
 
@@ -64,7 +69,7 @@ https://github.com/OVER-NULL/FLEAS.git
 Or Download the Repository
 ```
 
-#### Usage 
+#### Code Usage 
 
 ```cpp
 int starts(void)
@@ -100,6 +105,7 @@ u
 - [Windows](https://github.com/OVER-NULL/FLEAS/tree/master/Windows) -> [src](https://github.com/OVER-NULL/FLEAS/tree/master/Windows/src) -> 
 - [CONTRIBUTORS.md](https://github.com/OVER-NULL/FLEAS/blob/master/CONTRIBUTORS.md)
 - [CONTRIBUTIONS.md](https://github.com/OVER-NULL/FLEAS/blob/master/CONTRIBUTIONS.md)
+- [py_tester](https://github.com/OVER-NULL/FLEAS/blob/master/py_tester) -> [src](https://github.com/OVER-NULL/FLEAS/blob/master/py_tester/src/pytester) -> [pytester](https://github.com/OVER-NULL/FLEAS/blob/master/py_tester/src/pytester)
 
 #### Files and Folders are subject to have their name changed and more files can be included without notice. 
 
@@ -333,27 +339,33 @@ See | [LICENSE.md](https://github.com/OVER-NULL/FLEAS/blob/master/LICENSE) file 
 
 - Github - [OVER-NULL](https://github.com/OVER-NULL)
 
+#### Author Info can or will be changed without notice 
+
 --- 
 
 ## Contributors 
 
 - OVER-NULL 
 
+#### Contributors can or will be changed without notice 
+
 --- 
 
 ## Version Info 
 
-The current stable version of FLEAS is: 0.2b.0a. 
+### The current stable version of FLEAS is: 0.2b.5a.  
 
-Summury of Version 0.2b.0a Application is fixed up. 
+Summury of Version 0.2b.5a Application has a .mk file and Windows development has started
+Linux develop has started making characters and Game Physics, thanks for checking the current news concerning FLEAS. 
 
 --- 
 
 ## Help 
 
-If there is a bug please contact us through the email provided. 
+If there is a bug please contact us through the email provided or join our Discord. 
 
-- Email Address: electricalqubit@gmail.com
+- Email Address: electricalqubit@gmail.com 
+- Discord: https://discord.gg/jTWHzHf
 
 --- 
 
