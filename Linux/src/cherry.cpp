@@ -12,10 +12,11 @@
 #include "e_chars.hpp"
 #include "a_chars.hpp"
  
-// Version: 0.2b.0a
+// Version: 0.2b.5a
 // Producer: Qubit Games 
-// Date Started:  06 | 27 | 19
-// Date Finished: 10 | 04 | 19
+// Date Started:           06 | 27 | 19 
+// Date Actual:            08 | 14 | 19 
+// Date Finished Expected: 10 | 04 | 19
 // Programmers: Nico M
 
 // Game engine
@@ -166,8 +167,8 @@ int main(void)
         game.draw_image(COLS / 2 - flea_image.getWidth() / 2, 16, flea_image);
         
         game.draw_string(COLS / 2 - flea_image.getWidth() / 2 - 1, 23, "A Plague Based Text Adventure");
-        game.draw_string(COLS / 2 - flea_image.getWidth() / 2 - 1, 25, "Made by Qubit Games");
-        game.draw_string(COLS / 2 - flea_image.getWidth() / 2 + 5, 35, "Version: 0.2b.0a");
+        game.draw_string(COLS / 2 - flea_image.getWidth() / 2 + 4, 25, "Made by Qubit Games");
+        game.draw_string(COLS / 2 - flea_image.getWidth() / 2 + 5.3, 35, "Version: 0.2b.0a");
         game.draw_string(COLS / 2 - flea_image.getWidth() / 2 + 2.8, 50, "Press enter to continue");
         
         if ('\n' == getch())
@@ -187,7 +188,7 @@ int main(void)
         game.clear();
         
         game.draw_string(COLS / 2 - flea_image.getWidth() / 2 + 8, 25, "Welcome ");
-        game.draw_image(COLS / 2 - flea_image.getWidth() / 2 + 17, 25, img);
+        game.draw_image(COLS / 2 - flea_image.getWidth() / 2 + 17.5, 25, img);
         
         if ('\n' == getch())
         {
