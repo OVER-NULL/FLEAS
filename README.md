@@ -1,6 +1,6 @@
 # FLEAS
 
-![](https://img.shields.io/badge/C++-17-ffa500.svg) ![](https://img.shields.io/badge/Python-3.6-blue.svg) ![Bash](https://img.shields.io/badge/Bash-5.0-ff0000) ![](https://img.shields.io/badge/license-Apache2.0-lightgray.svg) ![](https://img.shields.io/badge/version-0.2b.5a-DA10F0.svg) ![](https://img.shields.io/badge/build-passing-green.svg)
+![](https://img.shields.io/badge/C++-17-ffa500.svg) ![](https://img.shields.io/badge/Python-3.6-blue.svg) ![Bash](https://img.shields.io/badge/Bash-5.0-ff0000) ![](https://img.shields.io/badge/license-Apache2.0-lightgray.svg) ![](https://img.shields.io/badge/version-0.2b.5a-yellow.svg) ![](https://img.shields.io/badge/build-passing-green.svg)
 
 > An ASCII based game 
 
