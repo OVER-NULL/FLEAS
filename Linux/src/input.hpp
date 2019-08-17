@@ -2,7 +2,7 @@
 #include <string>
 #include <fstream>
 
-// Version: 0.2b.0a
+// Version: 0.2b.5a
 // Producer: Qubit Games 
 // Date Started:  06 | 27 | 19
 // Date Finished: 10 | 04 | 19
@@ -19,7 +19,8 @@ class file_info
             
             std::cout << ("\nHi and welcome to the username selector for FLEAS\n");
             std::cout << ("\nPlease enter a username: ");
-            std::cin >> username;
+            
+            std::getline(std::cin, username);
             
             file_u.open(file_username);
             file_u << username;
@@ -73,6 +74,7 @@ int starts(void)
     std::cout << ("\nWould you like to enter a username or proceed to instructions\n");
     std::cout << ("\n(i) for instructions (u) for username: ");
     std::cin >> in;
+    std::cin.get();
     
     if (in == "i")
     {
@@ -99,9 +101,9 @@ int starts(void)
         starts(); 
     }
     
-    std::cout << ("Press enter to continue");
+    std::cout << ("\nPress enter to continue");
     
-    std::cin.ignore();
+    std::cin.get();
     
     std::cout << ("\033[2J\033[1;1H");
     
