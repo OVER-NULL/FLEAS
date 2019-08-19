@@ -59,7 +59,7 @@ class file_info
             else
             {
                 std::cout << ("Proceeding to game startup :)");
-                std::cout << ("\033[2J\033[1;1H");
+                std::cout << ("\033[2J\033[1;1H"); // clear screen Linux
             }
         }
 };
@@ -74,15 +74,21 @@ int starts(void)
     std::cout << ("\nWould you like to enter a username or proceed to instructions\n");
     std::cout << ("\n(i) for instructions (u) for username: ");
     std::cin >> in;
+    
     std::cin.get();
     
     if (in == "i")
     {
-         fi.instructions("instruk");
-         std::cout << ("\nPress enter to continue to USERNAME: ");
-         std::cin.get();
-         
-         std::cout << ("\033[2J\033[1;1H");
+        fi.instructions("instruk");
+        
+        std::cout << ("\nWhen you are done reading the instructions PRESS ENTER") << '\n';
+        std::cin.get();
+        std::cout << ("\033[2J\033[1;1H"); // clear screen Linux 
+        std::cout << ("Now that you've read instructions we will have you ENTER A USERNAME") << '\n';
+        
+        std::cout << ("\nPress enter to continue to USERNAME");
+        std::cin.get();
+        std::cout << ("\033[2J\033[1;1H"); // clear screen Linux 
          
          fi.write_file("username");
     }
@@ -96,16 +102,14 @@ int starts(void)
     {
         std::cout << ("Sorry no input matches");
         std::cout << ("\nPlease try again");
-        std::cout << ("\033[2J\033[1;1H");
+        std::cout << ("\033[2J\033[1;1H"); // clear screen Linux 
         
         starts(); 
     }
     
     std::cout << ("\nPress enter to continue");
-    
     std::cin.get();
-    
-    std::cout << ("\033[2J\033[1;1H");
+    std::cout << ("\033[2J\033[1;1H"); // clear screen Linux
     
     return (0);
 }

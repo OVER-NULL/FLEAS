@@ -1,3 +1,5 @@
+#include <iostream> 
+
 // Version: 0.2b.5a
 // Producer: Qubit Games 
 // Date Started:           06 | 27 | 19 
@@ -8,6 +10,10 @@
 class priest : public NPC
 {
     public:
+        
+        virtual void defend()
+        {
+        }
         
         virtual void attack(int attack_points)
         {
@@ -26,6 +32,10 @@ class plague_doctor : public NPC
 {
     public:
         
+        virtual void defend()
+        {
+        }
+        
         virtual void attack(int attack_points)
         {
         }
@@ -42,6 +52,10 @@ class plague_doctor : public NPC
 class protagonist : public NPC 
 {
     public:
+        
+        virtual void defend()
+        {
+        }
         
         virtual void attack(int attack_points)
         {
@@ -60,6 +74,10 @@ class good_peasant : public NPC
 {
     public:
         
+        virtual void defend()
+        {
+        }
+        
         virtual void attack(int attack_points)
         {
         }
@@ -76,6 +94,14 @@ class good_peasant : public NPC
 class knight : public NPC 
 {
     public:
+        
+        void defend()
+        {
+            std::cout << "    o|       o|       o|" << '\n';
+            std::cout << " <7O|=    <7O|=    <7O|=     <7__" << '\n';
+            std::cout << " (<( }-.  (< (}-.  ( <(}-.   (_( }-." << '\n';
+            std::cout << "  ||//     ||//     ||//      ||//" << '\n';
+        }
         
         virtual void attack(int attack_points)
         {

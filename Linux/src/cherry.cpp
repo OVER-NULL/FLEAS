@@ -1,3 +1,5 @@
+#include <chrono>
+#include <thread>
 #include <ncurses.h>
 
 #include "game_engine.hpp"
@@ -31,8 +33,8 @@ int main(void)
     curs_set(0);
     keypad(stdscr, true);
    
-    Game_Engine game; // class 
-    Image flea_image; // class 
+    Game_Engine game; // class for game functions 
+    Image flea_image; // class for image functions 
     Image img; // class for username print
     Image paragraph; // class for introduction paragraph 
     
@@ -53,7 +55,7 @@ int main(void)
         game.draw_string(COLS / 2 - flea_image.getWidth() / 2 + 5.3, 35, "Version: 0.2b.5a");
         game.draw_string(COLS / 2 - flea_image.getWidth() / 2 + 2.8, 50, "Press enter to continue");
         
-        if ('\n' == getch()) {break;}
+        if ('\n' == getch()) {break;} // end loop 
         
         game.render(window, LINES, COLS);
        
@@ -69,7 +71,7 @@ int main(void)
         game.draw_string(COLS / 2 - flea_image.getWidth() / 2 + 8, 25, "Welcome ");
         game.draw_image(COLS / 2 - flea_image.getWidth() / 2 + 17.5, 25, img);
         
-        if ('\n' == getch()) {break;}
+        if ('\n' == getch()) {break;} // end loop 
         
         game.render(window, LINES, COLS);
         
@@ -82,7 +84,7 @@ int main(void)
         
         game.draw_image(COLS / 2 - flea_image.getWidth() / .65, 30 - 7, paragraph);
         
-        if ('\n' == getch()) {break;}
+        if ('\n' == getch()) {break;} // end loop 
         
         game.render(window, LINES, COLS);
         
@@ -91,7 +93,17 @@ int main(void)
     
     endwin();
     
-    // ncurses ends 
-   
+    // ncurses ends                   
+    
+    // this is for testing only 
+    
+    NPC *ascii = new knight();
+    
+    ascii->defend();
+    
+    std::this_thread::sleep_for (std::chrono::seconds(3));
+    
+    // this is for testing only 
+    
     return (0);
 }

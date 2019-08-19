@@ -9,6 +9,10 @@ class barbarian : public NPC
 {
     public:
         
+        virtual void defend()
+        {
+        }
+        
         virtual void attack(int attack_points)
         {
         }
@@ -25,6 +29,10 @@ class barbarian : public NPC
 class witch : public NPC
 {
     public:
+        
+        virtual void defend()
+        {
+        }
         
         virtual void attack(int attack_points)
         {
@@ -43,6 +51,10 @@ class demon : public NPC
 {
     public:
         
+        virtual void defend()
+        {
+        }
+        
         virtual void attack(int attack_points)
         {
         }
@@ -60,6 +72,10 @@ class plague : public NPC
 {
     public:
         
+        virtual void defend()
+        {
+        }
+        
         virtual void attack(int attack_points)
         {
         }
@@ -76,6 +92,10 @@ class plague : public NPC
 class bad_peasant : public NPC
 {
     public:
+        
+        virtual void defend()
+        {
+        }
         
         virtual void attack(int attack_points)
         {

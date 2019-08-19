@@ -1,3 +1,5 @@
+#include <iostream>
+
 // Version: 0.2b.5a
 // Producer: Qubit Games 
 // Date Started:           06 | 27 | 19 
@@ -11,26 +13,30 @@ class character
 {
     public:
         
-        int health = 100;
-        
-        virtual void attack(int attack_points)
+        void defend()
         {
+            std::cout << "A knight 1" << '\n';
         }
-        
-        virtual void move()
-        {
-        }
-        
-        virtual void stats(int health)
-        {
-        }
-}; 
+};
 
-class NPC : public character
+class NPC : public character 
 {
     public:
         
-        virtual void stats(int health) 
+        void stats(int health) 
+        {
+        }
+    
+        virtual void defend()
+        {
+            std::cout << "A knight 2" << '\n';
+        }
+    
+        void attack(int attack_points)
+        {
+        }
+        
+        void move()
         {
         }
 };
