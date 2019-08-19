@@ -1,0 +1,3 @@
+{"Font":"Courier New",
+"Color1":"#5d0963",
+"Color2":"#FFFFFF"}
